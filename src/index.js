@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 console.log('This works');
-
+// Loads the basic layout of the page with an IIFE
 (function (){
     function navBar(){
         const navContainer = document.createElement('div');
