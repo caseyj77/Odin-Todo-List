@@ -28,6 +28,14 @@ console.log('This works');
         const contentTitle = document.createElement('h1');
         contentTitle.textContent = 'ToDo List';
         contentContainer.appendChild(contentTitle);
+
+        const contentArea = document.createElement('div');
+        contentArea.id = 'contentArea';
+        contentContainer.appendChild(contentArea);
+
+        const contentTask = document.createElement('p');
+        contentTask.textContent = 'Tasks will end up here';
+        contentArea.appendChild(contentTask);
     }
     navBar();
     content();
