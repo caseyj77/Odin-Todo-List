@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import { setupProjectButton } from './project';
 
 console.log('This works');
 // Loads the basic layout of the page with an IIFE
@@ -26,7 +27,7 @@ console.log('This works');
         document.body.appendChild(contentContainer);
 
         const contentTitle = document.createElement('h1');
-        contentTitle.textContent = 'ToDo List';
+        contentTitle.textContent = 'Your Projects';
         contentContainer.appendChild(contentTitle);
 
         const contentArea = document.createElement('div');
@@ -34,11 +35,13 @@ console.log('This works');
         contentContainer.appendChild(contentArea);
 
         const contentTask = document.createElement('p');
-        contentTask.textContent = 'Tasks will end up here';
+        contentTask.textContent = 'Projects will end up here';
         contentArea.appendChild(contentTask);
     }
     navBar();
     content();
+    setupProjectButton();
 
 
 })();
+
